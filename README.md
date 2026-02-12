@@ -9,7 +9,7 @@ Userscript and Node.js script for exporting GIFs from Discord as files.
     2. [Click here to install the userscript.](https://github.com/Sv443/DiscordGifExport/raw/refs/heads/main/ExporterUserscript.user.js)
 - Node.js script:
     1. Install [Node.js.](https://nodejs.org/)
-    2. Clone this repository with Git or download and extract it.
+    2. Clone this repository with Git [or download it here](https://github.com/Sv443/DiscordGifExport/archive/refs/heads/main.zip) and extract the .zip file.
 
 <br>
 
