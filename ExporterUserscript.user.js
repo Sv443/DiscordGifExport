@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Discord GIF Exporter
-// @version     1.0.0
+// @version     1.0.1
 // @description Collects a list of all Discord GIF URLs and exports them
 // @author      Sv443
 // @copyright   Sv443 (https://github.com/Sv443)
@@ -11,8 +11,7 @@
 // @match       https://discord.com/*
 // @run-at      document-start
 // @grant       GM.registerMenuCommand
-// @require     https://unpkg.com/@sv443-network/userutils@9.4.4/dist/index.global.js
-// @require     https://unpkg.com/@sv443-network/coreutils@2.0.0/dist/CoreUtils.min.umd.js
+// @require     https://unpkg.com/@sv443-network/userutils@10.0.6/dist/UserUtils.umd.js
 // @noframes
 // @updateURL   https://github.com/Sv443/DiscordGifExport/raw/refs/heads/main/ExporterUserscript.user.js
 // @downloadURL https://github.com/Sv443/DiscordGifExport/raw/refs/heads/main/ExporterUserscript.user.js
@@ -36,7 +35,7 @@ function run() {
 
   const ac = new AbortController();
 
-  CoreUtils.setImmediateInterval(() => {
+  UserUtils.setImmediateInterval(() => {
     if(document.querySelector(gifContainerSelector)) {
       ac.abort();
       gifObserver.enable();
